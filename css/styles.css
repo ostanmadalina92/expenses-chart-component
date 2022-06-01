@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans";
+}
+
+body {
+  background-color: hsl(25, 67%, 88%);
+  min-height: 100vh;
+  font-size: 18px;
+}
+
+/* Main */
+
+article {
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.balance {
+  background-color: hsl(10, 79%, 65%);
+  display: flex;
+  justify-content: space-between;
+}
+
+.balance span {
+  color: hsl(33, 100%, 98%);
+}
+
+.balance span > p,
+h3 {
+  margin-bottom: 5px;
+}
+
+.balance img {
+  width: 2.5em;
+}
+
+.weeklySpendings {
+  background-color: hsl(33, 100%, 98%);
+}
+
+.balance,
+.weeklySpendings {
+  border-radius: 1rem;
+  margin-bottom: 10px;
+  padding: 1rem;
+}
+
+h2,
+h3,
+h4 {
+  color: hsl(25, 47%, 15%);
+  font-weight: 700;
+}
+
+.balance h3 {
+  color: hsl(33, 100%, 98%);
+}
+
+.weeklySpendings p {
+  color: hsl(28, 10%, 53%);
+  font-weight: 400;
+}
+
+hr {
+  height: 1px;
+  background-color: hsl(27, 66%, 92%);
+  border: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.monthlySpendings {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left{
+    align-self: flex-start;
+    text-align: left;
+}
+.right{
+    align-self: flex-end;
+    text-align: right;
+}
+
+p, h4 {
+    font-size: .6rem;
+}
+
+/* Footer */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
