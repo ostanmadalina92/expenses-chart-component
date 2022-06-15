@@ -10,17 +10,27 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="./css/styles.css" />
 
     <title>Frontend Mentor | Expenses chart component</title>
-
   </head>
 
   <body>
+    <!-- Accessibility report #1 -->
+    <!-- Use a <h1/> to describe page content -->
+
+    <!-- Accessibility report #2, #4 -->
+    <!-- Use a <main/> to group page content -->
 
     <article>
+      <!-- HTML report #7 -->
+      <!-- Evert <article/> should have a heading element -->
 
       <section class="balance">
+        <!-- HTML report #1 - #6 -->
+        <!-- You can nest only formatting elements -->
+        <!-- inside of <span/>s (e.g. <i>, <b>, <em>) -->
         <span>
           <p>My balance</p>
           <h3>$921.48</h3>
@@ -29,13 +39,12 @@
       </section>
 
       <section class="weeklySpendings">
-        
         <div>
           <h3>Spending - Last 7 days</h3>
-            <canvas id="chart"></canvas>
+          <canvas id="chart"></canvas>
         </div>
 
-        <hr>
+        <hr />
 
         <div class="monthlySpendings">
           <span class="left">
@@ -47,9 +56,7 @@
             <p>from last month</p>
           </span>
         </div>
-
       </section>
-
     </article>
 
     <footer class="attribution">
@@ -61,6 +68,5 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
     <script src="./index.js"></script>
-
   </body>
 </html>
